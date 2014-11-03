@@ -1,20 +1,16 @@
-function StringScramble(str1,str2) { 
+function PalindromeTwo(str){
 
-var arr = str2.split("");
+ 
+	var together = str.replace(/[^a-zA-Z]/g,"");
 
- for(i=0;i<str2.length;i++){
-   
- 	for(j=0;str2[i]!=str1[j];j++){
- 		if(j==str1.length-1) return false;
- }
-
-}
-return true;
-
-  
+	var lower = together.toLowerCase().split("");
+	var string = lower.join("");
+    var rev = lower.reverse().join("");
+	if(string == rev )
+	return true;
+    return false;
 }
 
-console.log(StringScramble("rkqodlw","world"))
-console.log(StringScramble("cdore","coder"))
-console.log(StringScramble("h3llko","hello"))
-
+ 
+console.log(PalindromeTwo("Noel - sees Leon"));
+console.log(PalindromeTwo("A war at Taraw!"));
