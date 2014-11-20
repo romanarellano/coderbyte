@@ -9,11 +9,11 @@ function DashInsertII(num){
 var num = num.toString().split("");
   for(var i=0;i<num.length;i++){
       str+=num[i];
-      if(i==num.length-1 || num[i]==0)continue;
+      if(i==num.length-1 || num[i]==0 || num[i+1]==0)continue;
       else if(true ==isEven(num[i])&& isEven(num[i])==isEven(num[i+1]))str+="*";
       else if(false == isEven(num[i]) && isEven(num[i])==isEven(num[i+1]))str+="-";
   }
 return str;
 }
 
-console.log(DashInsertII(56647304))
+console.log(DashInsertII(4646093))
