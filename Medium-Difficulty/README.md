@@ -1,4 +1,0 @@
-coderbyte
-=========
-
-Just having fun
