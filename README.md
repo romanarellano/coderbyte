@@ -3,7 +3,7 @@ coderbyte
 
 Just having fun using:
 * objects 
-* for loops,nest for loops 
+* for loops,nested for loops 
 * if/else statements 
 * recursion in for loop
 * regex as conditional operators;
