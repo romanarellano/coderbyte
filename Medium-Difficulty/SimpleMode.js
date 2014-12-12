@@ -15,10 +15,10 @@ count=obj[j];
 number =j;
 
 }
-else if(obj[j]==count && arr.indexOf(parseInt(j))<index){
- 	count=obj[j];
+if(obj[j]==count && arr.indexOf(Number(j))<index){
+ 	
 number =j;
-index=arr.indexOf(parseInt(j));
+index=arr.indexOf(Number(j));
   }
 }
 if(count>1)
@@ -26,4 +26,4 @@ return number;
 return -1;
 }
 
-console.log(SimpleMode([3,3,4,4,5,5,5,5,2,2,1,6,6,6]))
+console.log(SimpleMode([3,3,4,4,2,6,6,6,2,2,1,5,5,5]))
